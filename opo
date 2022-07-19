@@ -1,0 +1,309 @@
+x=2
+y=-1
+z=x>3 and y<0
+u=x>3 or y<0
+print(z)
+print(u)
+
+
+
+
+a={5,12,3}
+print(max(a))
+a.sort()
+print(a)
+
+
+
+
+!pip install twstock
+import twstock as d
+e=d.Stock("3008")       #大立光
+print(e.price)                #近一個月盤
+
+
+
+
+
+a="apple"
+b="banana"
+c="cherry"
+d="dragon fruit"
+print(a,b,c,d,sep=",",end=".")
+print(a,end="\n")
+print(b,end=".")
+
+
+
+
+apple=6
+banana=5
+ans = apple == banana
+print(ans)
+
+
+
+
+
+
+%pylab inline
+plot([-2,1,0,3],[3,5,-1,8])
+
+
+
+a = list(range(2,19,2))
+print(a)
+
+
+
+
+
+from numpy.random import *
+for i in range(50):
+  print(randint(1,10),end=",")
+  
+  
+sun = True
+if sun is True:
+  print("好熱")
+print("出門出門")
+
+
+
+
+
+
+%pylab inline
+
+def f(x):
+  return 2*x**2+3*x-5
+
+x =linspace(-4,4,600) #寬度
+y =f(x)
+plot(x,y)
+  print("A+")
+elif score>=80:
+  print("B+")
+elif score>=70:
+  print("C+")
+elif score>=60:
+  print("D+")
+else:
+  print("F")
+  
+  
+  
+
+age=int(input("請問你幾歲:"))
+hasAdult=input("有大人陪嗎?有的話請鍵入True,無則鍵入False")
+if (age>=12) or (age>=6 and hasAdult):
+  print("可以看保護級電影")
+  
+  
+  students=["aa","cc","vb"]
+for st in students:
+  print(st,end=",")
+  
+  
+  
+  
+x = 1
+while x < 10:
+  print(x,end="")
+  x += 1
+else:
+  print("Enough")
+  
+  
+  
+x = int(input())
+x += 5
+x *= 8
+x -= 9
+print(x)
+
+
+for i in range(3,100,8):
+  print(i,end=",")
+  
+  
+ST=["Alice","BoB","cc","PP"]
+CC=[100,58,75,82]
+STp=len(ST)   #取ST序列中的“長度”(有幾個的意思)
+for score in range(STp):
+  if CC[score] == 100:
+    print(ST[score],CC[score],"分","你是特優")
+  elif CC[score] >= 80:
+    print(ST[score],CC[score],"分","你還過得去")
+  else:
+    print(ST[score],CC[score],"分","你需要再努力一點")
+    
+    
+    
+  ans=0         #用ans變數記錄最後加總的答案
+num=1         #用num變數記錄下一個要加的數字
+while num<=1000:    
+  ans=num+ans    #ans=ans+num 一直增加數字,直到num到達1000
+  num=num+1 n    # num= num +1 每次把要加的數字+1
+print(ans)       #迴圈結束後,把答案印出來
+
+
+
+
+a,b=0,1      #逗號相當於分開表明，可以有效的減少打字的時間
+n=1000
+while a < n:
+  print(a,end=",")
+  a,b=b,a+b
+  
+  
+  
+while True:     #不斷重複的意思
+  user = input("小小<再讓我說一次我愛你!!")
+  if user == "停":
+    break
+  print(user)
+print("好，我不說")
+
+
+
+
+or i in range(1,21):
+  if i % 6 ==0:
+    continue   #跳過
+  print(i,end=",")
+
+
+
+
+
+#def 定義函數
+def ss(x):
+  x=x**2
+  return x  #回傳X
+#上為函數
+#下為函數帶入範例
+x=3
+x_op = ss(x)
+print(x_op)
+print(x)
+
+
+
+
+
+def pp(x):mm    #因數分解
+  print(x,"的因數有:")
+  for i in range(1,x+1):
+    if x % i == 0:
+      print(i,end=" ")
+num = int(input("請輸入正整數:"))
+pp(num)
+
+
+
+
+%pylab inline
+
+def f(x):
+  return 2*x**2+3*x-5
+
+x =linspace(-4,4,600) #寬度
+y =f(x)
+plot(x,y)
+
+
+
+
+
+
+
+
+cars = ["Ford", "Volvo", "BMW"]
+
+y = cars[0]
+
+print(y)
+
+
+z = len(cars)
+
+print(z)
+
+
+for x in cars:
+  print(x)
+
+cars = ["Ford", "Volvo", "BMW"]
+
+y = cars[0]
+
+print(y)
+
+
+z = len(cars)
+
+print(z)
+
+
+for x in cars:
+  print(x)
+
+
+
+
+
+
+op = ["F", "B", "V","M"]
+
+op.sort()
+
+print(op)
+
+z.append("d")
+
+print(z)
+
+
+
+
+def pp(a):
+  for x in a:
+    print(x)
+
+e = ["ae", "bn", "cr"]
+
+pp(e)
+
+
+
+
+
+#a059: 完全平方和
+#專題一
+a = int(input())
+b = int(input())
+sum = 0
+for i in range(a,b+1):
+  for x in range(1,34):
+    if i == x**2:
+      sum = i + sum
+print(sum)
+
+
+
+#a740: 质因数之和
+#專題二
+a = int(input())
+sum = 0
+for i in range(1,1000):
+  while a % i == 0:
+    a = a / i
+    sum += i
+  if a == 1:
+    break
+print(sum)
+
+
+
+
